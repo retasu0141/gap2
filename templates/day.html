@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Looking for a gap!</title>
+  </head>
+  <body>
+      <div class="header">
+          <div class="header-logo">Looking for a <span>gap!</span></div>
+      </div>
+      <div class="main">
+          <div class="copy-container">
+              <h1>みんなの<span>ほしい</span>は何だった？</h1>
+              <p>[トレンド一覧]</p>
+              {% for n in text_list %}
+              <p>{{ n }}</p>
+              {% endfor %}
+          </div>
+      </div>
+      <div class="footer">
+          <h1>made by Retasu</h1>
+      </div>
+  </body>
+</html>

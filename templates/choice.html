@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>HTML</title>
+  </head>
+  <body>
+      <div class="header">
+          <div class="header-logo">Looking for a <span>gap!</span></div>
+      </div>
+      <div class="main">
+          <div class="copy-container">
+              <h1>みんなの<span>ほしい</span>は何だった？</h1>
+              <img src="{{ img }}"/>
+              <p>[関連キーワード]</p>
+              <p>-トップ-</p>
+              <p>{{ text3 }}</p>
+              <p>-急上昇-</p>
+              <p>{{ text4 }}</p>
+              <p>[関連トピック]</p>
+              <p>-トップ-</p>
+              <p>{{ text }}</p>
+              <p>-急上昇-</p>
+              <p>{{ text2 }}</p>
+              <p>選択してください</p>
+          </div>
+      </div>
+      <div class="footer">
+          <h1>made by Retasu</h1>
+      </div>
+  </body>
+</html>
